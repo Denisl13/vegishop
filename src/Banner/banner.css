@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+.featured {
+  /*imagens do banner*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.featured--vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+  width: 100%;
+  /*background: linear-gradient(
+    to top,
+    #111 10%,
+    transparent 90%
+  );
+*/
+}
+
+.featured--horizontal {
+  height: inherit;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 10%,
+    rgba(0, 0, 0, 0.5) 20%,
+    rgba(0, 0, 0, 0.3) 30%,
+    transparent 70%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 3%;
+}
+
+.featured--name {
+  font-size: 7vw;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.featured--description {
+  font-size: 2vw;
+  color: #ffffff;
+  max-width: 70%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+
+.featured--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  margin-top: 1em;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.netflix-button {
+  font-size: 1.3rem;
+  background-image: linear-gradient(to bottom right, #ffcc33, #ff9933);
+  border: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  transition: all 0.2s ease-in-out;
+}
+
+.netflix-button:hover {
+  background-image: none;
+  color: #000;
+}
+
+.featured--button:hover {
+  transform: scale(1.1);
+}
+.featured--button:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 760px) {
+  .featured--name {
+    font-size: 2.8rem;
+  }
+  .featured--description {
+    width: 100%;
+    font-size: 14px;
+  }
+  .featured--buttons,
+  .netflix-button {
+    font-size: 1rem;
+    transform: translateX(-1%);
+  }
+  .featured--button:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .featured--buttons,
+  .featured--button,
+  .netflix-button {
+    height: 50%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .featured--buttons {
+    margin-left: 0.7rem;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .conteudo__titulo__descricao {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .featured--name {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .featured--description {
+    font-size: 16px;
+  }
+}

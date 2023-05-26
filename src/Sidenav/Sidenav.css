@@ -1,0 +1,79 @@
+.sidenav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Adicione a propriedade width e opacidade para a classe .open */
+.sidenav.open {
+  width: 250px;
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding: 0.1rem;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav-span:hover {
+  color: white;
+}
+
+.closebtn {
+  color: #fff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 50px;
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.sidenav .closebtn:hover {
+  color: #f44336;
+}
+
+/* Sidenav.css */
+
+/* Estilos para telas com largura de 600px ou mais */
+@media (min-width: 600px) {
+  .sidenav-span {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para telas com largura de 200px ou menos */
+@media (max-width: 250px) {
+  .sidenav-span {
+    display: none;
+  }
+}
+
