@@ -67,7 +67,7 @@ function CosmComPage2() {
     };
   }, []);
 
-  const imageIndex = 2;
+  const imageIndex = 3;
   const imageUrl = Cosmeticoimages[imageIndex].image;
 
   return (
