@@ -67,7 +67,7 @@ function CosmComPage1() {
     };
   }, []);
 
-  const imageIndex = 2; // Índice da imagem desejada de  SliderCosmeticos
+  const imageIndex = 1; // Índice da imagem desejada de  SliderCosmeticos
   const imageUrl = Cosmeticoimages[imageIndex].image;
 
   return (

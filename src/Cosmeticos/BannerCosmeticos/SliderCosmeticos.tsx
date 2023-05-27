@@ -9,9 +9,9 @@ export const Cosmeticoimages = [
   {
     //1
     image:
-      "https://images.unsplash.com/photo-1508285296015-c0b524447532?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=401&q=80",
-    title: "Moda Feminina",
-    description: "Foto feita - Belo Horizonte, Brazil",
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    title: "Remedios",
+    description: "Kit limpeza",
   },
   {
     //2
