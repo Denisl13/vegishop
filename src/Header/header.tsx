@@ -2,11 +2,10 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Sidenav from "../Sidenav/Sidenav";
-//import Burger from "../Burger/Burger";
 
 type HeaderProps = {
-  black: boolean;
-   showSidenav?: boolean; // Parâmetro opcional para mostrar o Sidenav
+  black: boolean; //Boolean (v) ou (f)
+  showSidenav?: boolean; // Parâmetro opcional para mostrar o Sidenav
 };
 
 function Header({ black, showSidenav = true }: HeaderProps) {
@@ -27,9 +26,10 @@ function Header({ black, showSidenav = true }: HeaderProps) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   // Atualiza o título da aba do navegador
   const handleHomeClick = () => {
-    document.title = "Vegistore.com.br : Home";
+    document.title = "Vegistore | Home";
   };
 
   return (

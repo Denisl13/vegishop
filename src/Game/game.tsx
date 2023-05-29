@@ -1,18 +1,17 @@
 import "./game.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-//import HeaderGame from "./HeaderGame/HeaderGame";
 import { NavHeader } from "../Header/header";
+import BvoltaTop from "../VoltaInicio/BvoltaTopo";
 import Footer from "../Footer/footer";
 import Bgame from "./Bgame/Bgame";
-//import Sepgame from "./Sepgame/Sepgame";
 import Sep from "../Separador/Sep";
 
 interface CardGameProps {
   img: string;
   title: string;
   description: string;
-  stars?: number; // Adicionando a nova propriedade "stars"
+  stars?: number;
 }
 function CardGame(props: CardGameProps) {
   const filledStars = props.stars ? Math.floor(props.stars) : 0;
@@ -41,10 +40,8 @@ function CardGame(props: CardGameProps) {
 function Game() {
   return (
     <div className="grid--container--Game">
-      {/*<HeaderGame />*/}
       <NavHeader />
       <Bgame />
-      {/*<Sepgame />*/}
       <Sep title="Game" />
       <div className="grid-container-Game">
         <div className="grid--item--Game item-1">
@@ -130,6 +127,7 @@ function Game() {
           </div>
         </div>
       </div>
+      <BvoltaTop />
       <Footer />
     </div>
   );

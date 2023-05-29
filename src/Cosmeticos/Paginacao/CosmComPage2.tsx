@@ -6,6 +6,7 @@ import Footer from "../../Footer/footer";
 import { Cosmeticoimages } from "../BannerCosmeticos/SliderCosmeticos";
 import Bcosmeticos from "../BannerCosmeticos/Bcosm";
 import { NavHeader } from "../../Header/header";
+import BvoltaTop from "../../VoltaInicio/BvoltaTopo";
 
 // Interface para as propriedades do CardCosmPag2
 interface CardCosmPag2Props {
@@ -166,6 +167,7 @@ function CosmComPage2() {
         <Link to="/cosmeticos/pagination=3?">3</Link>
         <Link to="/cosmeticos">&raquo;</Link>
       </div>
+      <BvoltaTop />
       <Footer />
     </div>
   );

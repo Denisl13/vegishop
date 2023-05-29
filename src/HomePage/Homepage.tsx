@@ -3,12 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../Footer/footer";
 import Sep from "../Separador/Sep";
+import BvoltaTop from "../VoltaInicio/BvoltaTopo";
 
 interface HomePageProps {
   img: string;
   title: string;
   description: string;
-  stars?: number; // Adicionando a nova propriedade "stars"
+  stars?: number; //stars
+  sales?: string; //número de vendas
+  label?: string; //propriedade desconto
+  className?: string; //Card especial p Destaque
+  isSpecial?: boolean; //identificar o cartão especial
 }
 function CardHomepage(props: HomePageProps) {
   const filledStars = props.stars ? Math.floor(props.stars) : 0;
@@ -22,7 +27,11 @@ function CardHomepage(props: HomePageProps) {
     </span>
   ));
   return (
-    <div className="card--master--Homepage">
+    <div
+      className={`card--master--Homepage ${
+        props.isSpecial ? "special-card" : ""
+      }`}
+    >
       <div className="card__corpo">
         <img
           src={props.img}
@@ -32,7 +41,15 @@ function CardHomepage(props: HomePageProps) {
         <h2 className="card__titulo__Homepage">{props.title}</h2>
         <p className="card__descricao__Homepage">{props.description}</p>
       </div>
-      <div className="card__stars__Homepage">{props.stars && stars}</div>
+      <div className="card__stars__Homepage">
+        <div
+          className={`card__label__Homepage ${props.label ? "has-label" : ""}`}
+        >
+          <div className="label__content__Homepage">{props.label}</div>
+        </div>
+        <span>{props.stars && stars}</span>
+        {props.sales && <p>{props.sales} vendidos</p>}
+      </div>
       <button className="card__botao__Homepage">Saiba Mais...</button>
     </div>
   );
@@ -50,6 +67,7 @@ function Homepage() {
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={5}
+              sales="+5199"
             />
           </div>
         </div>
@@ -60,6 +78,9 @@ function Homepage() {
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={2}
+              sales="+7431"
+              label="-50%"
+              isSpecial={true} // Cartão Especial
             />
           </div>
         </div>
@@ -70,6 +91,7 @@ function Homepage() {
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={3}
+              sales="+853"
             />
           </div>
         </div>
@@ -83,6 +105,7 @@ function Homepage() {
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={5}
+              sales="+1053"
             />
           </div>
         </div>
@@ -206,6 +229,7 @@ function Homepage() {
           </div>
         </div>
       </div>
+      <BvoltaTop />
       <Footer />
     </div>
   );

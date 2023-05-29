@@ -1,20 +1,23 @@
 import "./Cosmeticos.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../Footer/footer";
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { NavHeader } from "../Header/header";
-import Bcosmeticos from "./BannerCosmeticos/Bcosm";
+import "./Paginacao/CosmPage.css";//Paginação 1,2,3
 import Sep from "../Separador/Sep";
+import Footer from "../Footer/footer";
+import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavHeader } from "../Header/header";
+import BvoltaTop from "../VoltaInicio/BvoltaTopo";
+import Bcosmeticos from "./BannerCosmeticos/Bcosm";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 interface CardCosmeticosProps {
   img: string;
   title: string;
   description: string;
-  stars?: number; // Adicionando a nova propriedade "stars"
+  stars?: number;
 }
-
+//Estrelas
 function CardCosmeticos(props: CardCosmeticosProps) {
   const filledStars = props.stars ? Math.floor(props.stars) : 0;
   const stars = Array.from({ length: 5 }, (_, i) => (
@@ -64,9 +67,9 @@ function Cosmeticos() {
       });
     };
   }, []);
-
+  //Banner
   const imageUrl =
-    "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=887&q=80"; // Insira o URL da imagem desejada aqui
+    "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=887&q=80";
 
   return (
     <div className="grid--container--Cosmeticos">
@@ -116,7 +119,6 @@ function Cosmeticos() {
         </div>
       </div>
       <div className="grid-container-Cosmeticos">
-        {/*<Headercosm />*/}
         <NavHeader />
         <div className="grid--item--Cosmeticos item1">
           <div className="wrapper__Cosmeticos">
@@ -166,6 +168,7 @@ function Cosmeticos() {
         <Link to="/cosmeticos/pagination=3?">3</Link>
         <a href="/cosmeticos">&raquo;</a>
       </div>
+      <BvoltaTop />
       <Footer />
     </div>
   );

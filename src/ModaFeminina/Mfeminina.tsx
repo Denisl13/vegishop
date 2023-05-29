@@ -2,8 +2,7 @@ import "./Mfeminina.css";
 import BmodaFeminina from "./BModaFeminina/BMFeminina";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-//import SepModaFem from "./SeparadorMFem/SepMfem";
-//import HeaderFeminina from "./HeaderFeminina/Headerfeminina";
+import BvoltaTop from "../VoltaInicio/BvoltaTopo";
 import Footer from "../Footer/footer";
 import Sep from "../Separador/Sep";
 import { NavHeader } from "../Header/header";
@@ -12,7 +11,7 @@ interface CardFemininoProps {
   img: string;
   title: string;
   description: string;
-  stars?: number; // Adicionando a nova propriedade "stars"
+  stars?: number; // Propriedade "stars"
 }
 function CardFeminino(props: CardFemininoProps) {
   const filledStars = props.stars ? Math.floor(props.stars) : 0;
@@ -45,10 +44,8 @@ function CardFeminino(props: CardFemininoProps) {
 function BMFeminina() {
   return (
     <div className="grid--container--Feminino">
-      {/*<HeaderFeminina />*/}
       <NavHeader />
       <BmodaFeminina />
-      {/*<SepModaFem />*/}
       <Sep title="Moda Feminina" />
       <div className="grid-container-Feminino">
         <div className="grid--item--Feminino item-1">
@@ -134,6 +131,7 @@ function BMFeminina() {
           </div>
         </div>
       </div>
+      <BvoltaTop />
       <Footer />
     </div>
   );

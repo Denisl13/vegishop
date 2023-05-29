@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import "./Sidenav.css";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Sidenav() {
@@ -22,7 +22,7 @@ function Sidenav() {
   };
 
  const handleButtonClick = (text: string) => {
-    document.title = `Vegistore.com.br : ${text}`;
+    document.title = `Vegistore | ${text}`;//Aba título
   };
 
   return (
@@ -35,6 +35,7 @@ function Sidenav() {
           color: "#f44336",
           fontFamily: "Montserrat, sans-serif",
           fontWeight: "bold",
+          marginRight:"-19px",
         }}
         onClick={openNav}
       >

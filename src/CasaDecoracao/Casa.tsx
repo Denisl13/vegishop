@@ -1,19 +1,18 @@
 import "./Casa.css";
 import "./Fontes/fonte.css";
-//import Sepcasa from "../SeparadorCasa/Sepcasa";
 import Bcasa from "../BannerCasa/Bcasa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-//import HeaderCasa from "../CasaDecoracao/HeaderCasa/HeaderCasa";
 import Footer from "../Footer/footer";
 import Sep from "../Separador/Sep";
 import { NavHeader } from "../Header/header";
+import BvoltaTop from "../VoltaInicio/BvoltaTopo";
 
 interface CardCasaProps {
   img: string;
   title: string;
   description: string;
-  stars?: number; // Adicionando a nova propriedade "stars"
+  stars?: number;
 }
 function CardCasa(props: CardCasaProps) {
   const filledStars = props.stars ? Math.floor(props.stars) : 0;
@@ -42,10 +41,8 @@ function CardCasa(props: CardCasaProps) {
 function Cosmeticos() {
   return (
     <div className="grid--container--Casa">
-      {/*<HeaderCasa />*/}
       <NavHeader />
       <Bcasa />
-      {/*<Sepcasa />*/}
       <Sep title="Casa & Decoração" />
       <div className="grid-container-Casa">
         <div className="grid--item--Casa item-1">
@@ -131,6 +128,7 @@ function Cosmeticos() {
           </div>
         </div>
       </div>
+      <BvoltaTop />
       <Footer />
     </div>
   );

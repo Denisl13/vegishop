@@ -1,4 +1,3 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Home/home";
 import Game from "./Game/game";
 import Casa from "./CasaDecoracao/Casa";
@@ -7,6 +6,8 @@ import Mfeminina from "./ModaFeminina/Mfeminina";
 import CosmComPage1 from "./Cosmeticos/Paginacao/CosmComPage1";
 import CosmComPage2 from "./Cosmeticos/Paginacao/CosmComPage2";
 import CosmComPage3 from "./Cosmeticos/Paginacao/CosmComPage3";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 
 function Routers() {
   return (

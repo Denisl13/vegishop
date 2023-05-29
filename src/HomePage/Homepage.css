@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+.card--master--Homepage.special-card {
+  background-color: black;
+  color: white;
+}
+.card--master--Homepage.special-card h2,
+.card--master--Homepage.special-card p {
+  color: white;
+}
 
 .grid--item--Homepage {
   display: flex;
@@ -87,11 +94,33 @@
   color: white;
 }
 
+/*Alinhameto Stars e Sales +vendidos*/
+.card__label__Homepage.has-label {
+  background-color: red;
+  color: white;
+  padding: 0.3rem;
+  margin: -10px;
+  border-radius: 0.2rem;
+  align-self: flex-start;
+}
+
 .card__stars__Homepage {
   display: flex;
-  justify-content: center;
-  padding: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.7rem;
 }
+
+.card__stars__Homepage span {
+  margin-bottom: 0.2rem;
+}
+
+.card__stars__Homepage p {
+  margin: 0;
+  font-size: 14px;
+  margin-top: 0.2rem;
+}
+
 
 @media (min-width: 600px) {
   .wide {

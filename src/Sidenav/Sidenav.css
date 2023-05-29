@@ -4,22 +4,16 @@
   right: 0;
   height: 100%;
   width: 0;
-
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Defina as áreas do grid conforme necessário */
 }
 
-/* Adicione a propriedade width e opacidade para a classe .open */
 .sidenav.open {
   width: 250px;
-  transition: 0.5s; 
+  transition: 0.5s;
 }
 
 .sidenav a {
@@ -39,6 +33,7 @@
 .sidenav a:hover {
   color: #f1f1f1;
 }
+
 .sidenav-span:hover {
   color: white;
 }
@@ -57,23 +52,18 @@
   border: none;
   cursor: pointer;
 }
+
 .sidenav .closebtn:hover {
   color: #f44336;
 }
-
-/* Sidenav.css */
-
-/* Estilos para telas com largura de 600px ou mais */
-@media (min-width: 600px) {
-  .sidenav-span {
-    font-size: 16px;
-  }
+.menu__sidebar{
+  margin-top: 9.375em;
 }
 
-/* Estilos para telas com largura de 200px ou menos */
-@media (max-width: 250px) {
+@media (min-width: 600px) {
+  /* Estilos para telas com largura de 600px ou mais */
   .sidenav-span {
-    display: none;
+    font-size: 16px;
   }
 }
 
