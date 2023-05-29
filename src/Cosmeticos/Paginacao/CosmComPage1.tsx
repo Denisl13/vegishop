@@ -6,7 +6,7 @@ import Footer from "../../Footer/footer";
 import { Cosmeticoimages } from "../BannerCosmeticos/SliderCosmeticos";
 import Bcosmeticos from "../BannerCosmeticos/Bcosm";
 import { NavHeader } from "../../Header/header";
-import './CosmPage1.css';
+import "./CosmPage1.css";
 import Sep from "../../Separador/Sep";
 import BvoltaTop from "../../VoltaInicio/BvoltaTopo";
 
@@ -76,7 +76,7 @@ function CardCosmPag1(props: CardCosmPag1Props) {
     </div>
   );
 }
-// ScrollTop pagination 
+// ScrollTop pagination
 function CosmComPage1() {
   useEffect(() => {
     const handlePaginationClick = () => {
@@ -210,7 +210,7 @@ function CosmComPage1() {
       {/*Final Bloco */}
 
       <div className="pagination">
-        <a href="/cosmeticos">&laquo;</a>
+        <Link to="/cosmeticos">&laquo;</Link>
         <Link to="/cosmeticos/pagination=1?" className="active">
           1
         </Link>
