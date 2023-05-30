@@ -1,5 +1,5 @@
 import "./Cosmeticos.css";
-import "./Paginacao/CosmPage.css";//Paginação 1,2,3
+import "./Paginacao/CosmPage.css"; //Paginação 1,2,3
 import Sep from "../Separador/Sep";
 import Footer from "../Footer/footer";
 import { Link } from "react-router-dom";
@@ -10,12 +10,12 @@ import Bcosmeticos from "./BannerCosmeticos/Bcosm";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 interface CardCosmeticosProps {
   img: string;
   title: string;
   description: string;
   stars?: number;
+  link?: string;
 }
 //Estrelas
 function CardCosmeticos(props: CardCosmeticosProps) {
@@ -33,11 +33,11 @@ function CardCosmeticos(props: CardCosmeticosProps) {
   return (
     <div className="card--master--Cosmeticos">
       <div className="card__corpo__Cosmeticos">
-        <img
-          src={props.img}
-          className="card-imagem--Cosmeticos"
-          alt={props.title}
-        />
+          <img
+            src={props.img}
+            className="card-imagem--Cosmeticos"
+            alt={props.title}
+          />
         <h2 className="card__titulo__Cosmeticos">{props.title}</h2>
         <p className="card__descricao__Cosmeticos">{props.description}</p>
       </div>
@@ -80,6 +80,7 @@ function Cosmeticos() {
         <div className="grid--item--Cosmeticos item-1">
           <div className="wrapper__Cosmeticos">
             <CardCosmeticos
+              
               img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=887&q=80"
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"

@@ -7,7 +7,7 @@
 .card--master--ccPage1.special-card p {
   color: white;
 }
-
+/*---------------------------------------------*/
 
 .grid--item--ccPage1 {
   display: flex;
@@ -52,7 +52,7 @@
 }
 
 .card-imagem--ccPage1 {
-  height: 9rem;
+  height: 11rem;
   width: 100%;
   max-width: 100%;
   object-fit: cover;

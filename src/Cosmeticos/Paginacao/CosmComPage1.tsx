@@ -13,6 +13,7 @@ import BvoltaTop from "../../VoltaInicio/BvoltaTopo";
 // Interface para as propriedades do CardCosmPag1
 interface CardCosmPag1Props {
   img: string;
+  link?: string;
   title: string;
   description: string;
   stars?: number;
@@ -42,11 +43,14 @@ function CardCosmPag1(props: CardCosmPag1Props) {
       }`}
     >
       <div className="card__corpo__ccPage1">
-        <img
-          src={props.img}
-          className="card-imagem--ccPage1"
-          alt={props.title}
-        />
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          <img
+            src={props.img}
+            className="card-imagem--ccPage1"
+            alt={props.title}
+          />
+        </a>
+
         <h2
           className={`card__titulo__ccPage1 ${
             props.isSpecial ? "special-card" : ""
@@ -111,13 +115,14 @@ function CosmComPage1() {
         <div className="grid--item--Cosmeticos item-1">
           <div className="wrapper__Cosmeticos">
             <CardCosmPag1
-              img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=887&q=80"
+              img="https://m.media-amazon.com/images/I/51xYDrHoHbL._AC_SX466_.jpg"
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={5}
               sales="+5199"
               label="-50%"
               isSpecial={true} // Cartão Especial
+              link="https://amzn.to/3N2jO4q"
             />
           </div>
         </div>
@@ -130,6 +135,7 @@ function CosmComPage1() {
               stars={5}
               sales="+/- 6524"
               label="-70%"
+              link="+ Detalhes sobre o produto"
             />
           </div>
         </div>
