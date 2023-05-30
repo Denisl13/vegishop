@@ -1,13 +1,27 @@
 import "./Bcasa.css";
+import { casaimages } from "./Slidercasa";
+import React, { useState, useEffect } from "react";
 
 function Bcasa() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % casaimages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentImage = casaimages[currentImageIndex];
+
   return (
     <section
       className="featured__casa"
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundImage: `url(https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)`,
+        backgroundImage: `url(${currentImage.image})`,
         transition: "background-image 0.5s ease",
       }}
     >
