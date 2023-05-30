@@ -159,7 +159,7 @@ function CosmComPage2() {
         </div>
       </div>
       <div className="pagination">
-        <a href="/cosmeticos">&laquo;</a>
+        <Link to="/cosmeticos">&laquo;</Link>
         <Link to="/cosmeticos/pagination=1?">1</Link>
         <Link to="/cosmeticos/pagination=2?" className="active">
           2
