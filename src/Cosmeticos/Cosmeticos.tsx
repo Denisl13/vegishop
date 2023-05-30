@@ -166,7 +166,7 @@ function Cosmeticos() {
         <Link to="/cosmeticos/pagination=1?">1</Link>
         <Link to="/cosmeticos/pagination=2?">2</Link>
         <Link to="/cosmeticos/pagination=3?">3</Link>
-        <a href="/cosmeticos">&raquo;</a>
+        <Link to="/cosmeticos">&raquo;</Link>
       </div>
       <BvoltaTop />
       <Footer />
