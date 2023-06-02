@@ -4,10 +4,10 @@ import Casa from "./CasaDecoracao/Casa";
 import Cosmeticos from "./Cosmeticos/Cosmeticos";
 import Mfeminina from "./ModaFeminina/Mfeminina";
 import CosmComPage1 from "./Cosmeticos/Paginacao/CosmComPage1";
-import CosmComPage2 from "./Cosmeticos/Paginacao/CosmComPage2";
+import CosmComPage2 from "./Cosmeticos/Paginacao/CosmeticosPage2/CosmComPage2";
 import CosmComPage3 from "./Cosmeticos/Paginacao/CosmComPage3";
+import PageNotFound from "./PageNotFound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 
 function Routers() {
   return (
@@ -21,6 +21,7 @@ function Routers() {
         <Route path="/cosmeticos/pagination=2?" element={<CosmComPage2 />} />
         <Route path="/cosmeticos/pagination=3?" element={<CosmComPage3 />} />
         <Route path="/games" element={<Game />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );

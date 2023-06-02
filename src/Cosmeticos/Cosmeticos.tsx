@@ -80,7 +80,6 @@ function Cosmeticos() {
         <div className="grid--item--Cosmeticos item-1">
           <div className="wrapper__Cosmeticos">
             <CardCosmeticos
-              
               img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=887&q=80"
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
