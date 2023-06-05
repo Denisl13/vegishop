@@ -29,8 +29,7 @@ function CardHomepage(props: HomePageProps) {
   return (
     <div
       className={`card--master--Homepage ${
-        props.isSpecial ? "special-card" : ""
-      }`}
+        props.isSpecial ? "special-card" : ""}`}
     >
       <div className="card__corpo">
         <img

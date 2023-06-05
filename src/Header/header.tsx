@@ -1,7 +1,7 @@
 import "./header.css";
 import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
 import Sidenav from "../Sidenav/Sidenav";
+import React, { useState, useEffect } from "react";
 
 type HeaderProps = {
   black: boolean; //Boolean (v) ou (f)
@@ -35,8 +35,7 @@ function Header({ black, showSidenav = true }: HeaderProps) {
   return (
     <header
       className={`header ${black ? "black" : ""} ${
-        isNavVisible ? "visible" : ""
-      }`}
+        isNavVisible ? "visible" : "" }`}
     >
       <div className="header-logo">
         <h2>

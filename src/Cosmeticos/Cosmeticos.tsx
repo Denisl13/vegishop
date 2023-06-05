@@ -3,7 +3,7 @@ import "./Paginacao/CosmPage.css"; //Paginação 1,2,3
 import Sep from "../Separador/Sep";
 import Footer from "../Footer/footer";
 import { Link } from "react-router-dom";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { NavHeader } from "../Header/header";
 import BvoltaTop from "../VoltaInicio/BvoltaTopo";
 import Bcosmeticos from "./BannerCosmeticos/Bcosm";
@@ -37,8 +37,7 @@ function CardCosmeticos(props: CardCosmeticosProps) {
   return (
     <div
       className={`card--master--Cosmeticos ${
-        props.isSpecial ? "special-card" : ""
-      }`}
+        props.isSpecial ? "special-card" : "" }`}
     >
       <div className="card__corpo">
         <img
@@ -186,7 +185,7 @@ function Cosmeticos() {
         <Link to="/">&laquo;</Link>
         <Link to="/cosmeticos/pagination=1?">1</Link>
         <Link to="/cosmeticos/pagination=2?">2</Link>
-        <Link to="/cosmeticos/pagination=3?">3</Link>
+        {/*<Link to="/cosmeticos/pagination=3?">3</Link>*/}
         <Link to="/cosmeticos">&raquo;</Link>
       </div>
       <BvoltaTop />

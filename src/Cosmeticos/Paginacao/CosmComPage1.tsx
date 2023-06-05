@@ -221,7 +221,7 @@ function CosmComPage1() {
           1
         </Link>
         <Link to="/cosmeticos/pagination=2?">2</Link>
-        <Link to="/cosmeticos/pagination=3?">3</Link>
+        {/*<Link to="/cosmeticos/pagination=3?">3</Link>*/}
         <Link to="/cosmeticos">&raquo;</Link>
       </div>
       <BvoltaTop />

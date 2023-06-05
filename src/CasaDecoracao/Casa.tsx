@@ -1,12 +1,12 @@
 import "./Casa.css";
 import "./Fontes/fonte.css";
-import Bcasa from "../BannerCasa/Bcasa";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../Footer/footer";
 import Sep from "../Separador/Sep";
+import Footer from "../Footer/footer";
+import Bcasa from "../BannerCasa/Bcasa";
 import { NavHeader } from "../Header/header";
 import BvoltaTop from "../VoltaInicio/BvoltaTopo";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface CardCasaProps {
   img: string;

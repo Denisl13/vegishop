@@ -20,7 +20,7 @@ function Sidenav() {
       mySidenav.classList.remove("open");
     }
   };
-
+/*================================================================= */
  const handleButtonClick = (text: string) => {
     document.title = `Vegistore | ${text}`;//Aba título
   };
@@ -35,7 +35,7 @@ function Sidenav() {
           color: "#f44336",
           fontFamily: "Montserrat, sans-serif",
           fontWeight: "bold",
-          marginRight:"-19px",
+          marginRight: "-19px",
         }}
         onClick={openNav}
       >
@@ -46,10 +46,7 @@ function Sidenav() {
           &times;
         </button>
         <div className="menu__sidebar">
-          <Link
-            to="/"
-            onClick={() => handleButtonClick("Home")}
-          >
+          <Link to="/" onClick={() => handleButtonClick("Home")}>
             Home
           </Link>
 

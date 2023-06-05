@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
+import "./Page2.css";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import Sep from "../../../Separador/Sep";
+import Footer from "../../../Footer/footer";
+import { NavHeader } from "../../../Header/header";
+import Bcosmeticos from "../../BannerCosmeticos/Bcosm";
+import BvoltaTop from "../../../VoltaInicio/BvoltaTopo";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
-import Footer from "../../../Footer/footer";
 import { Cosmeticoimages } from "../../BannerCosmeticos/SliderCosmeticos";
-import Bcosmeticos from "../../BannerCosmeticos/Bcosm";
-import { NavHeader } from "../../../Header/header";
-import "./Page2.css";
-import Sep from "../../../Separador/Sep";
-import BvoltaTop from "../../../VoltaInicio/BvoltaTopo";
 
 // Interface para as propriedades do CardCosmPag1
 interface CardCosmPag2Props {
@@ -116,7 +116,7 @@ function CosmComPage2() {
           <div className="wrapper__Cosmeticos">
             <CardCosmPag2
               img="https://m.media-amazon.com/images/I/51xYDrHoHbL._AC_SX466_.jpg"
-              title="Baked Cod with Vegetables"
+              title="Vichy"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={5}
               sales="+5199"
@@ -221,7 +221,7 @@ function CosmComPage2() {
         <Link to="/cosmeticos/pagination=2?" className="active">
           2
         </Link>
-        <Link to="/cosmeticos/pagination=3?">3</Link>
+        {/*<Link to="/cosmeticos/pagination=3?">3</Link>*/}
         <Link to="/cosmeticos">&raquo;</Link>
       </div>
       <BvoltaTop />
