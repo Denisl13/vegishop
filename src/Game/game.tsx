@@ -31,8 +31,7 @@ function CardGame(props: CardGameProps) {
   return (
     <div
       className={`card--master--Game ${
-        props.isSpecial ? "special-card" : ""
-      }`}
+        props.isSpecial ? "special-card" : ""}`}
     >
       <div className="card__corpo">
         <img

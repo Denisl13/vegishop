@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
 import "./banner.css";
 import { images } from "./SliderData";
+import { useState, useEffect } from "react";
 
 function Banner() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

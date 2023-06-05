@@ -31,8 +31,7 @@ function CardFeminino(props: CardFemininoProps) {
   return (
     <div
       className={`card--master--Feminino ${
-        props.isSpecial ? "special-card" : ""
-      }`}
+        props.isSpecial ? "special-card" : ""}`}
     >
       <div className="card__corpo__Feminino">
         <img

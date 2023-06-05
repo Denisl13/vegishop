@@ -39,8 +39,7 @@ function CardCosmPag1(props: CardCosmPag1Props) {
   return (
     <div
       className={`card--master--ccPage1 ${
-        props.isSpecial ? "special-card" : ""
-      }`}
+        props.isSpecial ? "special-card" : ""}`}
     >
       <div className="card__corpo__ccPage1">
         <a href={props.link} target="_blank" rel="noopener noreferrer">
@@ -53,15 +52,13 @@ function CardCosmPag1(props: CardCosmPag1Props) {
 
         <h2
           className={`card__titulo__ccPage1 ${
-            props.isSpecial ? "special-card" : ""
-          }`}
+            props.isSpecial ? "special-card" : "" }`}
         >
           {props.title}
         </h2>
         <p
           className={`card__descricao__ccPage1 ${
-            props.isSpecial ? "special-card" : ""
-          }`}
+            props.isSpecial ? "special-card" : ""}`}
         >
           {props.description}
         </p>

@@ -1,7 +1,7 @@
 import "./header.css";
 import { Link } from "react-router-dom";
 import Sidenav from "../Sidenav/Sidenav";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 type HeaderProps = {
   black: boolean; //Boolean (v) ou (f)

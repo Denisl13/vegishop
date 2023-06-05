@@ -52,7 +52,7 @@
 .featured--description {
   font-size: 2vw;
   color: #ffffff;
-  max-width: 70%;
+  max-width: 60%;/*Descrição > Ocupação na imagem*/
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.5;
 }

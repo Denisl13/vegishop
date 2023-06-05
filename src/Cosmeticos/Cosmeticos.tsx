@@ -51,8 +51,7 @@ function CardCosmeticos(props: CardCosmeticosProps) {
       <div className="card__stars__Cosmeticos">
         <div
           className={`card__label__Cosmeticos ${
-            props.label ? "has-label" : ""
-          }`}
+            props.label ? "has-label" : ""}`}
         >
           <div className="label__content__Cosmeticos">{props.label}</div>
         </div>
