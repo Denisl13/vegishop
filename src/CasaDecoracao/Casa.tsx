@@ -13,6 +13,10 @@ interface CardCasaProps {
   title: string;
   description: string;
   stars?: number;
+  sales?: string; //número de vendas
+  label?: string; //propriedade desconto
+  className?: string; //Card especial p Destaque
+  isSpecial?: boolean; //identificar o cartão especial
 }
 function CardCasa(props: CardCasaProps) {
   const filledStars = props.stars ? Math.floor(props.stars) : 0;
@@ -26,13 +30,23 @@ function CardCasa(props: CardCasaProps) {
     </span>
   ));
   return (
-    <div className="card--master--Casa">
+    <div
+      className={`card--master--Casa ${props.isSpecial ? "special-card" : ""}`}
+    >
       <div className="card__corpo__Casa">
         <img src={props.img} className="card-imagem--Casa" alt={props.title} />
         <h2 className="card__titulo__Casa">{props.title}</h2>
         <p className="card__descricao__Casa">{props.description}</p>
       </div>
-      <div className="card__stars__Casa">{props.stars && stars}</div>
+      <div className="card__stars__Casa">
+        <div
+          className={`card__label__Casa ${props.label ? "has-label" : ""}`}
+        >
+          <div className="label__content__Casa">{props.label}</div>
+        </div>
+        <span>{props.stars && stars}</span>
+        {props.sales && <p>{props.sales} vendidos</p>}
+      </div>
       <button className="card__botao__Casa">Saiba Mais...</button>
     </div>
   );
@@ -62,6 +76,9 @@ function Cosmeticos() {
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={2}
+              sales="+7431"
+              label="-50%"
+              isSpecial={true} // Cartão Especial
             />
           </div>
         </div>

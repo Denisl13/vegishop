@@ -1,3 +1,4 @@
+/*Colori Qualquer card desejado*/
 .card--master--Homepage.special-card {
   background-color: black;
   color: white;
@@ -32,7 +33,7 @@
   gap: 1rem;
   padding: 1rem;
 
-  font-family: "Oxygen", sans-serif;
+  /*font-family: "Oxygen", sans-serif;*/
   color: black;
   background-color: #f5f5f5;
 }

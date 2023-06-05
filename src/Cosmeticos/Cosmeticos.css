@@ -1,3 +1,12 @@
+.card--master--Cosmeticos.special-card {
+  background-color: black;
+  color: white;
+}
+.card--master--Cosmeticos.special-card h2,
+.card--master--Cosmeticos.special-card p {
+  color: white;
+}
+
 .grid--item--Cosmeticos {
   display: flex;
   align-items: center;
@@ -23,7 +32,7 @@
   gap: 1rem;
   padding: 1rem;
 
-  font-family: "Oxygen", sans-serif;
+  /*font-family: "Oxygen", sans-serif;*/
   color: black;
   background-color: #f5f5f5;
 }
@@ -41,7 +50,7 @@
 }
 
 .card-imagem--Cosmeticos {
-  height: 9rem;
+  height: 12rem;
   width: 100%;
   max-width: 100%;
   object-fit: cover;
@@ -50,7 +59,7 @@
 .card__titulo__Cosmeticos {
   font-weight: 500;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   font-family: "BreuerText", sans-serif;
   line-height: 25px;
   padding: 1rem;
@@ -58,7 +67,7 @@
 }
 .card__descricao__Cosmeticos {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Myriad Pro", sans-serif;
   line-height: 20px;
   padding: 0 0.8rem;
@@ -84,12 +93,30 @@
   background: var(--clr-primary);
   color: white;
 }
-
+.card__label__Cosmeticos.has-label {
+  background-color: red;
+  color: white;
+  padding: 0.3rem;
+  margin: -10px;
+  border-radius: 0.2rem;
+  align-self: flex-start;
+}
 .card__stars__Cosmeticos{
   display: flex;
-  justify-content: center;
-  padding: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.7rem;
 }
+.card__stars__Cosmeticos span {
+  margin-bottom: 0.2rem;
+}
+
+.card__stars__Cosmeticos p {
+  margin: 0;
+  font-size: 14px;
+  margin-top: 0.2rem;
+}
+
 
 @media (min-width: 600px) {
   .wide {

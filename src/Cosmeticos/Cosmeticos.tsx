@@ -16,6 +16,10 @@ interface CardCosmeticosProps {
   description: string;
   stars?: number;
   link?: string;
+  sales?: string;         //número de vendas
+  label?: string;        //propriedade desconto
+  className?: string;   //Card especial p Destaque
+  isSpecial?: boolean; //identificar o cartão especial
 }
 //Estrelas
 function CardCosmeticos(props: CardCosmeticosProps) {
@@ -31,17 +35,31 @@ function CardCosmeticos(props: CardCosmeticosProps) {
   ));
 
   return (
-    <div className="card--master--Cosmeticos">
-      <div className="card__corpo__Cosmeticos">
-          <img
-            src={props.img}
-            className="card-imagem--Cosmeticos"
-            alt={props.title}
-          />
+    <div
+      className={`card--master--Cosmeticos ${
+        props.isSpecial ? "special-card" : ""
+      }`}
+    >
+      <div className="card__corpo">
+        <img
+          src={props.img}
+          className="card-imagem--Cosmeticos"
+          alt={props.title}
+        />
         <h2 className="card__titulo__Cosmeticos">{props.title}</h2>
         <p className="card__descricao__Cosmeticos">{props.description}</p>
       </div>
-      <div className="card__stars__Cosmeticos">{props.stars && stars}</div>
+      <div className="card__stars__Cosmeticos">
+        <div
+          className={`card__label__Cosmeticos ${
+            props.label ? "has-label" : ""
+          }`}
+        >
+          <div className="label__content__Cosmeticos">{props.label}</div>
+        </div>
+        <span>{props.stars && stars}</span>
+        {props.sales && <p>{props.sales} vendidos</p>}
+      </div>
       <button className="card__botao__Cosmeticos">Saiba Mais...</button>
     </div>
   );
@@ -84,6 +102,9 @@ function Cosmeticos() {
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={5}
+              sales="+7431"
+              label="-50%"
+              isSpecial={true} // Cartão Especial
             />
           </div>
         </div>

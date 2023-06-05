@@ -102,7 +102,7 @@ a {
 }
 
 .header-logo h1 {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", sans-serif;/*Fonte do botão Banner*/
   font-size: 28px;
   font-weight: bold;
   margin: 0;
@@ -146,8 +146,7 @@ a {
   }
 }
 /* Sidenav.css */
-
-/* Adicionar a regra de mídia para telas de 200px ou menos */
+/* Adicionar a regra de mídia para telas */
 @media (max-width: 300px) {
   .header-logo .vegi-store-text {
     font-size: 30px;

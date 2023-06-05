@@ -1,19 +1,19 @@
 import "./Homepage.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../Footer/footer";
 import Sep from "../Separador/Sep";
+import Footer from "../Footer/footer";
 import BvoltaTop from "../VoltaInicio/BvoltaTopo";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface HomePageProps {
   img: string;
   title: string;
   description: string;
-  stars?: number; //stars
-  sales?: string; //número de vendas
-  label?: string; //propriedade desconto
-  className?: string; //Card especial p Destaque
-  isSpecial?: boolean; //identificar o cartão especial
+  stars?: number;         //stars
+  sales?: string;        //número de vendas
+  label?: string;       //propriedade desconto
+  className?: string;  //Card especial p Destaque
+  isSpecial?: boolean;//identificar o cartão especial
 }
 function CardHomepage(props: HomePageProps) {
   const filledStars = props.stars ? Math.floor(props.stars) : 0;

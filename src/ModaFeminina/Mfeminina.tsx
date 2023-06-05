@@ -11,7 +11,11 @@ interface CardFemininoProps {
   img: string;
   title: string;
   description: string;
-  stars?: number; // Propriedade "stars"
+  stars?: number; //stars
+  sales?: string; //número de vendas
+  label?: string; //propriedade desconto
+  className?: string; //Card especial p Destaque
+  isSpecial?: boolean; //identificar o cartão especial
 }
 function CardFeminino(props: CardFemininoProps) {
   const filledStars = props.stars ? Math.floor(props.stars) : 0;
@@ -25,7 +29,11 @@ function CardFeminino(props: CardFemininoProps) {
     </span>
   ));
   return (
-    <div className="card--master--Feminino">
+    <div
+      className={`card--master--Feminino ${
+        props.isSpecial ? "special-card" : ""
+      }`}
+    >
       <div className="card__corpo__Feminino">
         <img
           src={props.img}
@@ -35,7 +43,15 @@ function CardFeminino(props: CardFemininoProps) {
         <h2 className="card__titulo__Feminino">{props.title}</h2>
         <p className="card__descricao__Feminino">{props.description}</p>
       </div>
-      <div className="card__stars__Feminino">{props.stars && stars}</div>
+      <div className="card__stars__Feminino">
+        <div
+          className={`card__label__Feminino ${props.label ? "has-label" : ""}`}
+        >
+          <div className="label__content__Feminino">{props.label}</div>
+        </div>
+        <span>{props.stars && stars}</span>
+        {props.sales && <p>{props.sales} vendidos</p>}
+      </div>
       <button className="card__botao__Feminino">Saiba Mais...</button>
     </div>
   );
@@ -55,6 +71,9 @@ function BMFeminina() {
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={5}
+              sales="+9431"
+              label="-50%"
+              isSpecial={true} // Cartão Especial
             />
           </div>
         </div>

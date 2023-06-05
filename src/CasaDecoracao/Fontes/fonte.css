@@ -1,4 +1,11 @@
+/*Fonte do Separador e Título */
 @font-face {
   font-family: "BreuerText";
   src: url("./Breuer Text Regular.ttf") format("truetype");
+}
+/*Fonte da Descrição*/
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.woff")
+    format("woff");
 }

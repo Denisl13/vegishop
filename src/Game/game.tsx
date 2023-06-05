@@ -11,7 +11,11 @@ interface CardGameProps {
   img: string;
   title: string;
   description: string;
-  stars?: number;
+  stars?: number; //stars
+  sales?: string; //número de vendas
+  label?: string; //propriedade desconto
+  className?: string; //Card especial p Destaque
+  isSpecial?: boolean; //identificar o cartão especial
 }
 function CardGame(props: CardGameProps) {
   const filledStars = props.stars ? Math.floor(props.stars) : 0;
@@ -25,13 +29,29 @@ function CardGame(props: CardGameProps) {
     </span>
   ));
   return (
-    <div className="card--master--Game">
+    <div
+      className={`card--master--Game ${
+        props.isSpecial ? "special-card" : ""
+      }`}
+    >
       <div className="card__corpo">
-        <img src={props.img} className="card-imagem--Game" alt={props.title} />
+        <img
+          src={props.img}
+          className="card-imagem--Game"
+          alt={props.title}
+        />
         <h2 className="card__titulo__Game">{props.title}</h2>
         <p className="card__descricao__Game">{props.description}</p>
       </div>
-      <div className="card__stars__Game">{props.stars && stars}</div>
+      <div className="card__stars__Game">
+        <div
+          className={`card__label__Game ${props.label ? "has-label" : ""}`}
+        >
+          <div className="label__content__Game">{props.label}</div>
+        </div>
+        <span>{props.stars && stars}</span>
+        {props.sales && <p>{props.sales} vendidos</p>}
+      </div>
       <button className="card__botao__Game">Saiba Mais...</button>
     </div>
   );
@@ -71,6 +91,9 @@ function Game() {
               title="Baked Cod with Vegetables"
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={3}
+              sales="+7431"
+              label="-50%"
+              isSpecial={true} // Cartão Especial
             />
           </div>
         </div>
