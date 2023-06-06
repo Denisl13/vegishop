@@ -7,7 +7,7 @@ function Bgame() {
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundImage: `url(https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80)`,
+        backgroundImage: `url(https://images.pexels.com/photos/1346154/pexels-photo-1346154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`,
         transition: "background-image 0.5s ease",
       }}
     >

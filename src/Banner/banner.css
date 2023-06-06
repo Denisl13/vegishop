@@ -41,8 +41,8 @@
   padding: 0 3%;
 }
 
-.featured--name {
-  font-size: 7vw;
+.featured--name {/*título*/
+  font-size: 6vw;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 1.5rem;
@@ -50,26 +50,36 @@
 }
 
 .featured--description {
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #ffffff;
   max-width: 60%;/*Descrição > Ocupação na imagem*/
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.5;
 }
 
-.featured--button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  padding: 1rem 3rem;
-  margin-top: 1em;
-  border-radius: 0.3rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+/*Criação de botão responsivo*/
+.featured--buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
 }
 
+.featured--button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #e5e5e5;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1em;
+  width: 300px; /* Altere a largura conforme necessário */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  border: 1px solid #e5e5e5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
 .netflix-button {
   font-size: 1.3rem;
   background-image: linear-gradient(to bottom right, #ffcc33, #ff9933);
@@ -77,62 +87,31 @@
   color: #e5e5e5;
   transition: all 0.2s ease-in-out;
 }
-
 .netflix-button:hover {
   background-image: none;
   color: #000;
 }
 
 .featured--button:hover {
-  transform: scale(1.1);
+  background-color: white;
 }
-.featured--button:last-child {
-  margin-right: 0;
+.featured--button:hover {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 760px) {
   .featured--name {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .featured--description {
-    width: 100%;
     font-size: 14px;
+    max-width: 100%;
   }
-  .featured--buttons,
+  
   .netflix-button {
+    width: 80%;
     font-size: 1rem;
-    transform: translateX(-1%);
   }
   .featured--button:last-child {
     margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 400px) {
-  .featured--buttons,
-  .featured--button,
-  .netflix-button {
-    height: 50%;
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .featured--buttons {
-    margin-left: 0.7rem;
-    margin-top: 1.5rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .conteudo__titulo__descricao {
-    padding-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .featured--name {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .featured--description {
-    font-size: 16px;
   }
 }

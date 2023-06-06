@@ -1,10 +1,11 @@
 export const images = [
   {
+    link: "https://www.pexels.com/pt-br/foto/aplicando-solicitando-praticando-escova-7290740/",
     image:
       "https://images.pexels.com/photos/7886608/pexels-photo-7886608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Game",
     description:
-      "Akihabara, Taitō, Tokio, Japón Arches National Park Entrance Station Um texto é uma manifestação da linguagem. Pode ser definido como tudo aquilo que é dito por um emissor e interpretado por um receptor.Dessa forma, tudo que é interpretável é um texto.",
+      "Akihabara, Taitō, Tokio, Japón Arches National Park Entrance Station Um texto é uma manifestação da linguagem.",
   },
   {
     image:
@@ -21,7 +22,7 @@ export const images = [
   {
     image:
       "https://images.pexels.com/photos/6454837/pexels-photo-6454837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Paraíso Deserta",
+    title: "Paraíso Deserto",
     description: "Filipinas paisagens incríveis para todos.",
   },
 ];

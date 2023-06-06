@@ -37,11 +37,13 @@ function Banner() {
         <div className="featured--horizontal">
           <div className="conteudo__titulo__descricao">
             <div className="featured--name">{currentImage.title}</div>
-            <div className="featured--description">{description}</div>
+            <div className="featured--description">{currentImage.description}</div>
             <div className="featured--buttons">
-              <button className="featured--button netflix-button">
+              <a
+                href={currentImage.link}
+                className="featured--button netflix-button">
                 + Saiba mais...
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -1,25 +1,25 @@
 export const casaimages = [
   {
     image:
-      "https://images.unsplash.com/photo-1580617971627-cffa74e39d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1253&q=80",
+      "https://images.pexels.com/photos/12700474/pexels-photo-12700474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Game",
     description: "Fotos - Akihabara, Taitō, Tokio, Japón",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1508285296015-c0b524447532?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=401&q=80",
+      "https://images.pexels.com/photos/14645214/pexels-photo-14645214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Moda Feminina",
     description: "Foto feita - Belo Horizonte, Brazil",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80",
+      "https://images.pexels.com/photos/5404920/pexels-photo-5404920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Viagem Perfeita",
     description: "Arches National Park Entrance Station, Moab, United States",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80",
+      "https://images.pexels.com/photos/4469186/pexels-photo-4469186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Paraíso - Deserta",
     description: "Filipinas paisagens incríveis para todos.",
   },

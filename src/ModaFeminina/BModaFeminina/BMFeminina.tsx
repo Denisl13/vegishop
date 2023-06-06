@@ -7,7 +7,7 @@ function Bfeminina() {
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundImage: `url(https://plus.unsplash.com/premium_photo-1679415150838-a85a1bbb233b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)`,
+        backgroundImage: `url(https://images.pexels.com/photos/9512656/pexels-photo-9512656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`,
         transition: "background-image 0.5s ease",
       }}
     >

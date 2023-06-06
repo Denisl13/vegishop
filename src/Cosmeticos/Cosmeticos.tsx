@@ -85,7 +85,7 @@ function Cosmeticos() {
   }, []);
   //Banner
   const imageUrl =
-    "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=887&q=80";
+    "https://images.pexels.com/photos/7290740/pexels-photo-7290740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
   return (
     <div className="grid--container--Cosmeticos">
