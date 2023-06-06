@@ -4,10 +4,10 @@
   right: 0;
   height: 100%;
   width: 0;
-  background-color: #111;
-  overflow-x: hidden;
   transition: 0.5s;
   display: grid;
+  overflow-x: hidden;
+  background-color: #111;
   grid-template-rows: auto 1fr auto; /* Defina as áreas do grid conforme necessário */
 }
 

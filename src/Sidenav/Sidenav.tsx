@@ -1,5 +1,5 @@
 import "./Sidenav.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Sidenav() {
@@ -35,7 +35,7 @@ function Sidenav() {
           color: "#f44336",
           fontFamily: "Montserrat, sans-serif",
           fontWeight: "bold",
-          marginRight: "-19px",
+          marginRight: "2px",
         }}
         onClick={openNav}
       >

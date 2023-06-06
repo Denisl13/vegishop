@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   height: 80vh;
+  
 }
 
 .featured--vertical {
@@ -23,7 +24,6 @@
   );
 */
 }
-
 .featured--horizontal {
   height: inherit;
   width: 100%;
@@ -41,7 +41,8 @@
   padding: 0 3%;
 }
 
-.featured--name {/*título*/
+.featured--name {
+  /*título*/
   font-size: 6vw;
   font-weight: bold;
   color: #ffffff;
@@ -52,7 +53,7 @@
 .featured--description {
   font-size: 1.5vw;
   color: #ffffff;
-  max-width: 60%;/*Descrição > Ocupação na imagem*/
+  max-width: 60%; /*Descrição > Ocupação na imagem*/
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.5;
 }
@@ -73,19 +74,19 @@
   margin-top: 1em;
   width: 300px; /* Altere a largura conforme necessário */
   cursor: pointer;
+  border-radius: 0.3rem;
+  border: 1px solid #e5e5e5;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 0.3rem;
-  border: 1px solid #e5e5e5;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .netflix-button {
   font-size: 1.3rem;
-  background-image: linear-gradient(to bottom right, #ffcc33, #ff9933);
-  border: 1px solid #e5e5e5;
   color: #e5e5e5;
+  border: 1px solid #e5e5e5;
   transition: all 0.2s ease-in-out;
+  background-image: linear-gradient(to bottom right, #ffcc33, #ff9933);
 }
 .netflix-button:hover {
   background-image: none;
@@ -106,7 +107,7 @@
     font-size: 14px;
     max-width: 100%;
   }
-  
+
   .netflix-button {
     width: 80%;
     font-size: 1rem;
