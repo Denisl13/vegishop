@@ -2,10 +2,12 @@
 @font-face {
   font-family: "BreuerText";
   src: url("./Breuer Text Regular.ttf") format("truetype");
+  font-display: swap;
 }
 /*Fonte da Descrição*/
 @font-face {
   font-family: "Myriad Pro";
   src: url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.woff")
     format("woff");
+    font-display: swap;
 }
