@@ -1,6 +1,5 @@
 a {
-  transform: rotate(1s);
-  /*text-decoration: none;*/
+  text-decoration: none;
 }
 
 /* header */
@@ -14,7 +13,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 15px;
   background-color: transparent; /* rgba(20, 20, 20, 0.2)*/
   transition: background-color 0.5s ease;
 }
@@ -49,11 +48,7 @@ a {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  transform: translate(-50%, -50%);
-  letter-spacing: -1px;
+  margin-right: auto; /* Margem à direita automática */
 }
 
 .vegi-store-text .letter {
@@ -102,7 +97,7 @@ a {
 }
 
 .header-logo h1 {
-  font-family: "Arial", sans-serif;/*Fonte do botão Banner*/
+  font-family: "Arial", sans-serif; /* Fonte do botão Banner */
   font-size: 28px;
   font-weight: bold;
   margin: 0;
@@ -140,35 +135,3 @@ a {
   height: 100%;
 }
 */
-@media screen and (max-width: 600px) {
-  .vegi-store-text {
-    margin-left: 2.5rem;
-  }
-}
-/* Sidenav.css */
-/* Adicionar a regra de mídia para telas */
-@media (max-width: 300px) {
-  .header-logo .vegi-store-text {
-    font-size: 30px;
-  }
-}
-@media (max-width: 780px) {
-  .header-logo .vegi-store-text {
-    margin-left: 1.5rem;
-  }
-}
-@media (max-width: 900px) {
-  .header-logo .vegi-store-text {
-    margin-left: 1.5rem;
-  }
-}
-@media (max-width: 450px) {
-  .header-logo .vegi-store-text {
-    margin-left: 3rem;
-  }
-}
-@media (max-width: 600px) {
-  .header-logo .vegi-store-text {
-    margin-left: 2.5rem;
-  }
-}

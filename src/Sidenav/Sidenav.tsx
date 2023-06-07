@@ -35,7 +35,7 @@ function Sidenav() {
           color: "#f44336",
           fontFamily: "Montserrat, sans-serif",
           fontWeight: "bold",
-          marginRight: "2px",
+          marginRight: "8px",
         }}
         onClick={openNav}
       >

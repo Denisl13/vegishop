@@ -39,7 +39,8 @@ function CardCosmPag1(props: CardCosmPag1Props) {
   return (
     <div
       className={`card--master--ccPage1 ${
-        props.isSpecial ? "special-card" : ""}`}
+        props.isSpecial ? "special-card" : ""
+      }`}
     >
       <div className="card__corpo__ccPage1">
         <a href={props.link} target="_blank" rel="noopener noreferrer">
@@ -52,13 +53,15 @@ function CardCosmPag1(props: CardCosmPag1Props) {
 
         <h2
           className={`card__titulo__ccPage1 ${
-            props.isSpecial ? "special-card" : "" }`}
+            props.isSpecial ? "special-card" : ""
+          }`}
         >
           {props.title}
         </h2>
         <p
           className={`card__descricao__ccPage1 ${
-            props.isSpecial ? "special-card" : ""}`}
+            props.isSpecial ? "special-card" : ""
+          }`}
         >
           {props.description}
         </p>
@@ -73,7 +76,9 @@ function CardCosmPag1(props: CardCosmPag1Props) {
         <span>{props.stars && stars}</span>
         {props.sales && <p>{props.sales} vendidos</p>}
       </div>
-      <button className="card__botao__ccPage1">View Recipe</button>
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
+        <button className="card__botao__ccPage1">View Recipe</button>
+      </a>
     </div>
   );
 }
@@ -126,24 +131,25 @@ function CosmComPage1() {
         <div className="grid--item--Cosmeticos item-1">
           <div className="wrapper__Cosmeticos">
             <CardCosmPag1
-              img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=887&q=80"
-              title="Baked Cod with Vegetables"
-              description="Baked Cod with Vegetables. 30 minute meal!"
+              img="https://m.media-amazon.com/images/I/711OtVgfhYL._AC_SY450_.jpg"
+              title="Máscara de Hidratação Lola Cosmetics Morte Súbita 450g"
+              description="Aproveite as ofertas na Amazon para adquirir produtos de beleza com desconto, como a Máscara Super Hidratante Morte Súbita da Lola Cosmetics. Essa máscara de nutrição é ideal para cabelos ressecados e danificados, proporcionando suavidade, força e desembaraço. Perfeita para uso diário e após processos de coloração, a máscara vem em embalagens de 450g e possui um aroma delicioso. Encontre essa excelente opção de cuidados com os cabelos no site da Amazon. Aproveite essa oportunidade agora!"
               stars={5}
               sales="+/- 6524"
               label="-70%"
-              link="+ Detalhes sobre o produto"
+              link="https://www.amazon.com.br/M%C3%A1scara-Hidratante-S%C3%BAbita-Lola-Cosmetics/dp/B074LTNQBP/ref=sr_1_8?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=cosmeticos&refinements=p_72%3A17833786011&rnid=5560472011&sr=8-8"
             />
           </div>
         </div>
         <div className="grid--item--Cosmeticos item-1">
           <div className="wrapper__Cosmeticos">
             <CardCosmPag1
-              img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=887&q=80"
-              title="Baked Cod with Vegetables"
-              description="Baked Cod with Vegetables. 30 minute meal!"
+              img="https://m.media-amazon.com/images/I/81Ve6gN5waL._AC_SX522_.jpg"
+              title="Lola Cosmetics Vintage Girls - Creme Alisante 100g BLZ"
+              description="result: Cabelos disciplinados, alinhados e com brilho intenso."
               stars={5}
               sales="+30589"
+              link="https://www.amazon.com.br/Creme-Alinsante-Vintage-Lola-Cosmetics/dp/B074LTRGN8/ref=sr_1_5?content-id=amzn1.sym.d7485298-0974-44ea-a5e5-22d8956c1761%3Aamzn1.sym.d7485298-0974-44ea-a5e5-22d8956c1761&keywords=cosmeticos+em+promo%C3%A7%C3%A3o&sr=8-5"
             />
           </div>
         </div>

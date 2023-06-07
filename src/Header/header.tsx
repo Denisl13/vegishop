@@ -35,8 +35,7 @@ function Header({ black, showSidenav = true }: HeaderProps) {
   return (
     <header
       className={`header ${black ? "black" : ""} ${
-        isNavVisible ? "visible" : "" }`}
-    >
+        isNavVisible ? "visible" : ""}`}>
       <div className="header-logo">
         <h2>
           <Link to="/" onClick={handleHomeClick}>
