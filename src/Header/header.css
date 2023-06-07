@@ -19,7 +19,10 @@ a {
 }
 
 .header.black {
-  background-color: rgba(20, 20, 20, 0.8);
+  background: linear-gradient(
+    to right,
+    rgb(19, 25, 33) 20%, 
+    rgb(255, 167, 36) 100%);
 }
 /*
 .header--logo {

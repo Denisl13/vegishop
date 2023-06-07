@@ -1,5 +1,5 @@
 /*Colorir Qualquer card desejado*/
-.card--master--Homepage.special-card {
+.card--master--Homepage.special-card {/*Concatenação de ambas as classes sem espaços*/
   background-color: black;
   color: white;
 }
