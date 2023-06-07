@@ -1,11 +1,11 @@
 /*Card Especial em destaque/Promoção*/
 .card--master--Cosmeticos.special-card {
-  background-color: black;
-  color: white;
+  background: linear-gradient(to right, #232f3e, orange);
+  color: #ffffff;
 }
 .card--master--Cosmeticos.special-card h2,
 .card--master--Cosmeticos.special-card p {
-  color: white;
+  color: #ffffff;
 }
 
 .grid--item--Cosmeticos {
@@ -34,7 +34,7 @@
   padding: 1rem;
 
   /*font-family: "Oxygen", sans-serif;*/
-  color: black;
+  color: #030303;
   background-color: #f5f5f5;
 }
 
@@ -92,11 +92,11 @@
 }
 .card--master--Cosmeticos:hover .card__botao__Cosmeticos {
   background: var(--clr-primary);
-  color: white;
+  color: #ffffff;
 }
 .card__label__Cosmeticos.has-label {
-  background-color: red;
-  color: white;
+  background-color: #FF6161;
+  color: #ffffff;
   padding: 0.3rem;
   margin: -10px;
   border-radius: 0.2rem;

@@ -44,14 +44,14 @@
   /*título*/
   font-size: 6vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #e5e5e5;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .featured--description {
   font-size: 1.5vw;
-  color: #ffffff;
+  color: #e5e5e5;
   max-width: 60%; /*Descrição > Ocupação na imagem*/
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.5;
@@ -93,7 +93,7 @@
 }
 
 .featured--button:hover {
-  background-color: white;
+  background-color: #e5e5e5;
 }
 .featured--button:hover {
   transform: scale(1.1);

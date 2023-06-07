@@ -1,11 +1,11 @@
 .card--master--ccPage1.special-card {
-  background-color: black;
-  color: white;
+  background: linear-gradient(to right, #232f3e, orange);
+  color: #ffffff;
 }
 
 .card--master--ccPage1.special-card h2,
 .card--master--ccPage1.special-card p {
-  color: white;
+  color: #ffffff;
 }
 
 .grid--item--ccPage1 {
@@ -31,7 +31,7 @@
   grid-column-gap: 1rem;
   gap: 1rem;
   padding: 1rem;
-  color: black;
+  color: #030303;
   background-color: #f5f5f5;
 }
 
@@ -96,11 +96,11 @@
 }
 .card--master--ccPage1:hover .card__botao__ccPage1 {
   background: var(--clr-primary);
-  color: white;
+  color: #ffffff;
 }
 .card__label__ccPage1.has-label {
-  background-color: red;
-  color: white;
+  background-color: #FF6161;
+  color: #ffffff;
   padding: 0.3rem;
   margin: -10px;
   border-radius: 0.2rem;

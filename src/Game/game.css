@@ -1,11 +1,11 @@
 /*Card Especial em destaque/Promoção*/
 .card--master--Game.special-card {
-  background-color: black;
-  color: white;
+  background: linear-gradient(to right, #232f3e, orange);
+  color: #ffffff;
 }
 .card--master--Game.special-card h2,
 .card--master--Game.special-card p {
-  color: white;
+  color: #ffffff;
 }
 
 .grid--item--Game {
@@ -34,7 +34,7 @@
   padding: 1rem;
 
   /*font-family: "Oxygen", sans-serif;*/
-  color: black;
+  color: #030303;
   background-color: #f5f5f5;
 }
 
@@ -92,13 +92,13 @@
 }
 .card--master--Game:hover .card__botao__Game {
   background: var(--clr-primary);
-  color: white;
+  color: #ffffff;
 }
 
 /*Alinhameto Stars e Sales +vendidos*/
 .card__label__Game.has-label {
-  background-color: red;
-  color: white;
+  background-color: #FF6161;
+  color: #ffffff;
   padding: 0.3rem;
   margin: -10px;
   border-radius: 0.2rem;
