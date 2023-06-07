@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
     <title>Vegistore.com.br | Tudo para você.</title>
     <meta property="org:locale" content="pt-BR" />
     <meta property="org:type" content="product" />
@@ -56,17 +54,6 @@
       if (userLang.startsWith("PT")) {
         document.documentElement.lang = "pt";
       }
-    </script>
-    <script>
-      const currentTime = new Date();
-      const formattedTime = currentTime.toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-      });
-      const timeElement = document.createElement("span");
-      timeElement.textContent = `Hora atual: ${formattedTime}`;
-      document.getElementsByTagName("body")[0].appendChild(timeElement);
     </script>
   </head>
 
