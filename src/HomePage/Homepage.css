@@ -97,12 +97,12 @@
 
 /*Alinhameto Stars e Sales +vendidos*/
 .card__label__Homepage.has-label {
-  background-color: #f14536; /* Cor de plano de fundo alterada */
-  color: #ffffff;
+  font-size: 12px;
   padding: 0.3rem;
   margin: -10px;
   border-radius: 0.2rem;
   align-self: flex-start;
+  background-color: #CC0C39; /* Cor de plano de fundo alterada */
 }
 .label__content__Homepage {
   color: #ffffff; /* Cor do texto alterada */

@@ -78,7 +78,7 @@ function Homepage() {
               description="Baked Cod with Vegetables. 30 minute meal!"
               stars={2}
               sales="+7431"
-              label="-50%"
+              label="Até 28% off"
               isSpecial={true} // Cartão Especial
             />
           </div>
